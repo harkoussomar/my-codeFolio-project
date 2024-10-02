@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./home.css";
 import profileImage from "../../assets/profile.png";
 import HomeNavElement from "./HomeNavElement";
-import SecondButton from "../ui/secondButton";
+import SecondButton from "../ui/SecondButton";
 
 // Common transition settings
 const commonTransition = {

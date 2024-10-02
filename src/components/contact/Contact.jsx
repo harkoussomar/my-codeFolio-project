@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./contact.css";
 import profileImage from "../../assets/profile.png";
 import MainButton from "../ui/MainButton";
-import SecondButton from "../ui/secondButton";
+import SecondButton from "../ui/SecondButton";
 
 // Animation Variants
 const containerVariants = {

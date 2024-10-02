@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./notFound.css"; // Optional for custom styling
-import SecondButton from "../ui/secondButton";
+import SecondButton from "../ui/SecondButton";
 
 const buttonVariants = {
   hidden: { x: -1000, opacity: 0 },

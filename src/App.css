@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --bg-body: #0d0d0d;
+  --bg-header: #1e1e1e;
+  --bg-element: #0c0c0c; /* For card, input, anchor background */
+
+  --text-primary: #dbdbdb;
+  --text-secondary: #bbb8b893;
+
+  /* Font Sizes */
+  --font-small: 0.75rem; /* 12px */
+  --font-normal: 0.875rem; /* 14px */
+  --font-normal-secondary: 1.125rem; /* 18px */
+  --font-title-main: 3rem; /* 48px */
+  --font-title-main-2: 2rem; 
+  --font-title-secondary: 1.5rem; /* 24px */
+
+  /* Padding */
+  --padding-small: 8px;
+  --padding-medium: 16px;
+  --padding-medium-2: 12px;
+  --padding-large: 24px;
+  --padding-xlarge: 32px;
+  --padding-xxlarge: 48px;
+  --padding-combo-1: 24px 32px;
+  --padding-combo-2: 20px 24px;
+  --padding-combo-3: 14px 32px 16px;
+  --padding-combo-4: 10px 14px;
+  --padding-medium-alt: 20px;
+
+  --transition-duration: 0.5s;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: var(--font-title-main);
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: var(--font-title-secondary);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* line-height: 1.5; */
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset form elements */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  background: none;
+  outline: none;
+}
+
+.app {
+  width: 100%;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  max-width: 650px;
+  margin-top:  100px;
+  padding-bottom: 80px;
+
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .main {
+    padding: var(--padding-medium);
+  }
+  .container {
+    min-width: 100%;
+  }
+  h1 {
+  font-size: var(--font-title-main-2);
+}
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

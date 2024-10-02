@@ -1,0 +1,145 @@
+.home {
+  padding-top: 100px;
+  width: 100%;
+  display: grid;
+  row-gap: 2.5rem;
+  position: relative;
+}
+
+.home__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.home__head-1 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.home__head-1 > img {
+  width: 3.2rem;
+  height: auto;
+  border-radius: 50%;
+  will-change: opacity, transform;
+}
+
+.home__nav {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.home__nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-combo-2);
+  cursor: pointer;
+  border: 2px solid var(--bg-header);
+  border-radius: 1rem;
+  transition: var(--transition-duration);
+}
+
+.home__nav-item-left {
+  font-size: var(--font-normal);
+  display: flex;
+  align-self: center;
+  gap: 1rem;
+}
+
+.home__nav-item-left > .home__nav-item-char {
+  color: var(--text-secondary);
+}
+
+.home__nav-item-left .home__nav-item-text {
+  transition: var(--transition-duration);
+}
+
+.home__nav-item-icons {
+  width: var(--padding-medium);
+  height: var(--padding-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.home__nav-item-icons > .svgContainer {
+  position: absolute;
+  width: calc(var(--padding-medium) * 2);
+  display: flex;
+  gap: 0.2rem;
+  right: 0;
+  transition: var(--transition-duration);
+}
+
+.home__nav-item:hover {
+  border: 2px solid var(--text-secondary);
+}
+
+.home__nav-item:hover .home__nav-item-text {
+  color: var(--text-secondary);
+}
+
+.home__nav-item-icon:first-of-type {
+  color: var(--text-secondary);
+}
+
+.home__nav-item:hover .svgContainer {
+  transform: translateX(var(--padding-medium));
+}
+
+.home__contact {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: var(--font-small);
+}
+
+.home__contact-2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.home__contact-2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-primary);
+  left: -100%;
+  bottom: 0;
+  transition: all var(--transition-duration) cubic-bezier(0.9, 0, 0.5, 1);
+}
+
+.home__contact-2:hover::before {
+  transform: translateX(100%);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .home__head-1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .home__head-1 > img {
+    width: 2.5rem;
+    /* height:; */
+    border-radius: 50%;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .home__head-1 {
+    gap: 0.4rem;
+  }
+  .home__head-1 > img {
+    display: none;
+  }
+}

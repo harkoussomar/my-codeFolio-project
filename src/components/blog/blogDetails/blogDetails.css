@@ -1,0 +1,99 @@
+.blog__details {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr);
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.blog__details p {
+  line-height: 1.5;
+  font-weight: 100;
+  color: var(--text-secondary);
+  padding-left: 0.5rem;
+}
+
+.blog__details-title {
+  margin-bottom: 1rem;
+  font-size: 20px; /* You can adjust the font size */
+  font-weight: 600; /* Or whichever weight you want */
+}
+
+.blog__image {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Content Cards */
+.blog__details-card {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--bg-element); /* Background color for cards */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.blog__details-subtitle {
+  font-size: var(--font-title-secondary);
+  font-weight: 400;
+}
+
+.blog__details-card-list-links {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.blog__details-card-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.blog__details-card-list h3 {
+  font-weight: 400;
+  font-size: var(--font-normal-secondary);
+}
+
+.blog__details-section-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: var(--transition-duration);
+}
+
+.blog__details-section-title-item {
+  border-bottom: 1px solid var(--text-primary);
+  transition: var(--transition-duration);
+}
+
+.blog__details__features-item {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* Hover effects */
+.blog__details-section-title:hover {
+  gap: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.blog__details-section-title:hover .blog__details-section-title-item {
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.blog__details-section-title:hover .blog__details-section-title-dote {
+  background-color: var(--text-secondary);
+}
+
+.blog__details-section-title-dote {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  transition: var(--transition-duration);
+}
+
+.button__container {
+  width: fit-content;
+  margin-top: 2rem; /* Adjust to fit your layout */
+}

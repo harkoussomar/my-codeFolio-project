@@ -1,0 +1,148 @@
+.work__details {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr);
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.work__details p {
+  line-height: 1.5;
+  font-weight: 100;
+  color: var(--text-secondary);
+  padding-left: 0.5rem;
+}
+
+.work__details-title {
+  margin-bottom: 1rem;
+}
+
+.work__details .swiper__container {
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 1rem !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: auto !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  padding: 5px 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pagination Bullets */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;
+}
+
+/* Adjust positioning of arrows */
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swipe__image {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.work__details-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.work__details-subtitle {
+  font-size: var(--font-title-secondary);
+  font-weight: 400;
+}
+
+.work__details-card-list-links {
+  display: grid;
+  gap: 0.5rem;
+}
+.work__details-card-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.work__details-card-list h3 {
+  font-weight: 400;
+  font-size: var(--font-normal-secondary);
+}
+
+.work__details-section-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: var(--transition-duration);
+}
+
+.work__details-section-title-item {
+  border-bottom: 1px solid var(--text-primary);
+  transition: var(--transition-duration);
+}
+
+.work__details__features-services-item {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.work__details-section-title:hover {
+  gap: 1.5rem;
+  color: var(--text-secondary);
+}
+.work__details-section-title:hover .work__details-section-title-item {
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.work__details-section-title:hover .work__details-section-title-dote {
+  background-color: var(--text-secondary);
+}
+
+.work__details-section-title-dote {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  transition: var(--transition-duration);
+}
+
+.button__container {
+  width: fit-content;
+}

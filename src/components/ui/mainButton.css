@@ -1,0 +1,26 @@
+.main__button {
+    padding: var(--padding-combo-3);
+    border: 2px solid var(--bg-header);
+    border-radius: 28px;
+    transition: var(--transition-duration);
+    /* width: fit-content; */
+    display: block;
+}
+
+.main__button:hover {
+    border-color: var(--text-secondary);
+}
+
+.main__button > span {
+    font-size: var(--font-normal);
+}
+
+.main__button-secondary {
+    background-color: white;
+    color: var(--bg-header);
+}
+
+.main__button-secondary:hover {
+    background-color: var(--bg-header);
+    color: white;
+}

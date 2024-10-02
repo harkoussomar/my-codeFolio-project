@@ -1,0 +1,23 @@
+.second__button {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    /* margin: auto; */
+    /* display: block; */
+}
+
+.second__button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-primary);
+    left: -100%;
+    bottom: 0;
+    transition: all var(--transition-duration) cubic-bezier(0.9, 0, 0.5, 1);
+}
+
+.second__button:hover::before {
+    transform: translateX(100%);
+}

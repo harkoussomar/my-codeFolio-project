@@ -1,0 +1,1 @@
+const o="/my-codeFolio-project/assets/work1-Dz1is6BC.png",s="/my-codeFolio-project/assets/work2_1-CTFk_ezs.png",e="/my-codeFolio-project/assets/work4_1-kp5EuH_u.png",c="/my-codeFolio-project/assets/work3_3-BlqGLxN5.png";export{s as a,e as b,c,o as w};

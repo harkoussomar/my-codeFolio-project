@@ -13,10 +13,13 @@ import work3_3 from "../../../assets/work3_3.png";
 import work4_1 from "../../../assets/work4_1.png";
 import work4_2 from "../../../assets/work4_2.jpg";
 
+import work5 from "../../../assets/work5.png";
+
 export const projectsData = [
   {
     name: "Fast React Pizza Co.",
     path: "fast-react-pizza",
+    projectLink: "https://github.com/harkoussomar/fast-react-pizza",
     images: [work2_1, , work2_2, work2_3, work2_4, work2_5],
     tableOfContents: [
       "Introduction",
@@ -102,6 +105,7 @@ export const projectsData = [
   {
     name: "usePopcorn",
     path: "usepopcorn",
+    projectLink: "https://harkoussomar.github.io/use-popcorn/",
     images: [work3_1, work3_2, work3_3],
     tableOfContents: [
       "Introduction",
@@ -168,6 +172,7 @@ export const projectsData = [
   {
     name: "WorldWise",
     path: "worldwise",
+    projectLink: "https://harkoussomar.github.io/world-wise/",
     images: [work4_1, work4_2],
 
     tableOfContents: [
@@ -250,6 +255,9 @@ export const projectsData = [
   {
     name: "Library Management System",
     path: "library-management",
+    projectLink:
+      "https://github.com/harkoussomar/library_management_system?tab=readme-ov-file#user-functions",
+
     images: [work1],
     tableOfContents: [
       "Introduction",
@@ -325,6 +333,98 @@ export const projectsData = [
         name: "File I/O",
         description:
           "The system uses file input/output operations to save and load books and users data from files, ensuring persistence.",
+      },
+    ],
+  },
+  {
+    name: "Far Away",
+    path: "far-away",
+    projectLink: "https://harkoussomar.github.io/Far-Away-Project/",
+
+    images: [work5],
+    tableOfContents: [
+      "Introduction",
+      "Features",
+      "Services",
+      "Technologies Used",
+    ],
+    introduction: {
+      description:
+        "The Far Away Packing List is a React-based web application that helps users manage items they need to pack for trips. It features the ability to add, sort, toggle, and delete items, along with real-time statistics to ensure users don't forget anything.",
+    },
+    features: [
+      {
+        name: "Add New Items",
+        description:
+          "Users can add new items to their packing list by specifying the item description and quantity.",
+      },
+      {
+        name: "Delete Items",
+        description:
+          "Users can remove any item from their list with a single click.",
+      },
+      {
+        name: "Toggle Packed Status",
+        description:
+          "Users can mark items as packed or unpacked by clicking a checkbox.",
+      },
+      {
+        name: "Sort Items",
+        description:
+          "Users can sort the packing list by input order, description, or packing status.",
+      },
+      {
+        name: "Clear List",
+        description:
+          "With a single click, users can clear the entire packing list.",
+      },
+      {
+        name: "Real-time Statistics",
+        description:
+          "Displays the total number of items and the percentage of items packed.",
+      },
+    ],
+    services: [
+      {
+        name: "Item Management",
+        description:
+          "The application allows users to add, remove, update, and manage items in their packing list with ease.",
+      },
+      {
+        name: "Packing Status Tracking",
+        description:
+          "Users can toggle the packed status of items to keep track of what’s packed and what’s pending.",
+      },
+      {
+        name: "Real-time Statistics",
+        description:
+          "Provides real-time updates on the total number of items and the percentage packed, helping users stay organized.",
+      },
+      {
+        name: "Sorting Options",
+        description:
+          "Allows sorting of items by their description, input order, or packing status to help users organize their list efficiently.",
+      },
+      {
+        name: "Data Persistence",
+        description:
+          "Ensures that the packing list remains intact even after the user refreshes the page or closes the browser, providing a smooth user experience.",
+      },
+    ],
+    technologiesUsed: [
+      {
+        name: "React",
+        description:
+          "The frontend of the application is built using React, a JavaScript library for building user interfaces.",
+      },
+      {
+        name: "JavaScript",
+        description:
+          "Core scripting language used for the functionality of the application.",
+      },
+      {
+        name: "CSS",
+        description: "Used for styling and making the application responsive.",
       },
     ],
   },

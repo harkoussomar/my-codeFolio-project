@@ -5,6 +5,8 @@ import Work1 from "../../assets/work1.png";
 import Work2 from "../../assets/work2_1.png";
 import Work3 from "../../assets/work4_1.png";
 import Work4 from "../../assets/work3_3.png";
+import Work5 from "../../assets/work5.png";
+
 import WorkCard from "./WorkCard";
 
 // Work Data
@@ -36,6 +38,13 @@ const workData = [
     subtitle: "Front-End App",
     description:
       "usePopcorn is a React application designed to help users search for movies, view details about each movie, and manage their watched list.",
+  },
+  {
+    image: Work5,
+    title: "Far Away",
+    subtitle: "Front-End App",
+    description:
+      "The Far Away Packing List is a React app that lets users easily manage and organize trip packing by adding, sorting, and deleting items.",
   },
 ];
 

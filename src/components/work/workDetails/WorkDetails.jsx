@@ -223,7 +223,11 @@ const WorkDetails = () => {
       </motion.div>
 
       <div className="button__container">
-        <MainButton to="#" label="Visite Project" />
+        <MainButton
+          link={project.projectLink}
+          label="Visite Project"
+          newTab={true}
+        />
       </div>
     </motion.div>
   );
